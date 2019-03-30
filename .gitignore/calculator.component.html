@@ -1,0 +1,45 @@
+
+<h1>My calculator</h1><br>
+
+<div class="card">
+
+  <div class="card-header text-center">CALCULATOR</div>
+
+
+  <div class="card-body">
+
+      <div class="form-group d-flex flex-row">
+        <input [(ngModel)] = 'num1' type="number" name="num1" class="form-control">
+        <input [(ngModel)] = 'num2' type="number" name="num2" class="form-control">
+      </div>
+
+      <div class="d-flex flex-row justify-content-between">
+        <button class="btn btn-success" (click)= "addition()">
+          SUM
+        </button>
+
+        <button class="btn btn-primary" (click)= "substraction()">
+            substraction
+          </button>
+
+          <button class="btn btn-danger" (click)= "multiplication()">
+              multiplication
+            </button>
+
+            <button class="btn btn-warning" (click)= "division()">
+                division
+              </button>
+      </div>
+
+
+  </div>
+
+  <div class="card-footer">
+    <h4>the sum of {{num1}} and {{num2}} is {{result}} </h4>
+
+  </div>
+
+
+
+
+</div>
